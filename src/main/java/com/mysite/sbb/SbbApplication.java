@@ -1,4 +1,4 @@
-package com.sbb;
+package com.mysite.sbb;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -11,3 +11,4 @@ public class SbbApplication {
     }
 
 }
+// 모든 클래스를 이 애플리케이션 클래스와 같이 둬야 작동한다!
