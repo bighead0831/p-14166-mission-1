@@ -1,6 +1,8 @@
 package com.mysite.sbb;
 
 import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.Setter;
 
 import java.time.LocalDateTime;
 import java.util.List;
@@ -8,9 +10,11 @@ import java.util.List;
 import static jakarta.persistence.GenerationType.IDENTITY;
 
 @Entity
+@Getter
+@Setter
 public class Question {
-    @Id
-    @GeneratedValue(strategy = IDENTITY)
+    @Id  // PRIMARY KEY
+    @GeneratedValue(strategy = IDENTITY)  // AUTO_INCREMENT
     private int id;
 
     private LocalDateTime createDate;
