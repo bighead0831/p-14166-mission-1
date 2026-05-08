@@ -13,13 +13,13 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.time.LocalDateTime;
 
-@Profile("test")
+@Profile("dev")
 @Configuration
 @RequiredArgsConstructor
-public class TestInitData {
+public class BaseInitData {
     @Autowired
     @Lazy
-    private TestInitData self;
+    private BaseInitData self;
     private final QuestionRepository questionRepository;
 
     @Bean
